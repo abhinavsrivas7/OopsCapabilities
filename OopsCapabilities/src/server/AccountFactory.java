@@ -20,12 +20,10 @@ public class AccountFactory {
 	
 	
 	public Account getAccount(int accountNumber) {
-		for (int i = 0; i < accounts.size(); i++) {
-			Account account = accounts.get(i);
+		for (Account account : accounts) {
 			if(account.accountNumber == accountNumber)
 				return account;
 		}
-	
 		return null;
 		
 	}
@@ -36,13 +34,5 @@ public class AccountFactory {
 			if(account.mobileNumber.equals(mobileNumber)) return account;
 		}
 		return null;
-	}
-	
-	public String getIFSC() {
-		return IBank.getIFSC();
-	}
-	
-	public String getBranch(Account account) {
-		return account.getBranch();
 	}
 }

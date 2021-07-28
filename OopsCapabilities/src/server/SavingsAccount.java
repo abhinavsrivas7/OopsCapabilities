@@ -13,7 +13,5 @@ public final class SavingsAccount extends Account {
 		return "Savings";
 	}
 	
-	public float getInterestRate() {
-		return interestRate;
-	}
+	public SavingsAccountInterestRate getInterestRate = () -> interestRate;
 }

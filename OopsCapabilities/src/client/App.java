@@ -114,11 +114,11 @@ public class App {
 		System.out.println("Account Holder Name: " + account.getAccountHolder());
 		System.out.println("Account Balance: " + account.checkBalance());
 		System.out.println("Account Registered Mobile Number: " + account.getMobileNumber());
-		System.out.println("IFSC Code: " + accountFactory.getIFSC());
-		System.out.println("Bank Address: " + accountFactory.getBranch(account));
+		System.out.println("IFSC Code: " + IBank.getIFSC());
+		System.out.println("Bank Address: " + account.getBranch());
 		String type = account.getAccountType();
 		System.out.println("Account Type: " + type);
 		if(type.equals("Savings")) 
-			System.out.println("Interest Rate: " + ((SavingsAccount)account).getInterestRate());
+			System.out.println("Interest Rate: " + ((SavingsAccount)account).getInterestRate.getInterestRate());
 	}
 }
